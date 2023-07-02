@@ -1,0 +1,62 @@
+html {
+  scroll-behavior: smooth;
+}
+.bg-pink{
+  background: #D74787;
+}
+.bg-purple{
+  background: #7F5ECA;
+}
+.logo-main-group{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.logo-text{
+  letter-spacing:10px;
+  font-weight: bold;
+  color: #deebff;
+  font-size: 50px;
+}
+.logo{
+  width: 45px;
+  height: 45px;
+}
+.btn-custom-purple{
+  background: #7F5ECA !important;
+  border-color: #7F5ECA !important;
+  color: #fff !important;
+}
+.btn-custom-pink{
+  background: #D74787 !important;
+  border-color: #D74787 !important;
+  color: #fff !important;
+}
+.box-group{
+  width: 400px;
+  position: relative;
+  padding-bottom: 60px;
+}
+.box-edit-del-group{
+  position: absolute;
+  bottom: 0px;
+  width: calc(100% - 2rem);
+}
+.single-edit-main-group{
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(0,0,0,.7);
+  z-index: 2;
+}
+.single-edit-form{
+  padding: 50px;
+  background:#2B2730;
+  position: relative;
+}
+.edit-form-cross{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
