@@ -13,8 +13,8 @@ function AllAgendas(props){
       {
         agendaList.map((item)=>
 
-          <div key={item.id} className="text-light border px-3 pt-2 box-group">
-            <span><input type="checkbox" onChange={()=>dispatch(checkboxClickedAction(item.id))} checked={item.completed?'checked':''}/>{item.completed?' Done':' Not Done'}</span>
+          <div key={item.id} className={`text-light border px-3 pt-2 box-group ${item.completed?'opacity-half':''}`}>
+            <span className="form-check form-switch"><input type="checkbox" className="form-check-input" onChange={()=>dispatch(checkboxClickedAction(item.id))} checked={item.completed?'checked':''}/><label className="form-check-label">{item.completed?' accomplished agenda':' Yet to accomplish agenda'}</label></span>
             <h4>{item.title}</h4>
             <p>{item.description}</p>
               <div className="d-flex flex-wrap border-top pt-3 box-edit-del-group">

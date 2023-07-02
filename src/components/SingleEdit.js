@@ -55,7 +55,7 @@ function SingleEdit(props){
           <h2 className="text-center mb-5">Update your agenda</h2>
           <form onSubmit={handleEditedFormSubmit}>
           <span className="d-none">{editId}</span>
-            <p><input type="checkbox" checked={editCompletedValue?'checked':''} onChange={(e)=>setEditCompletedValue(!editCompletedValue)}/>{editCompletedValue?' Accomplished agenda':' Yet to accomplish agenda'}</p>
+            <p className="form-check form-switch"><input type="checkbox" className="form-check-input" checked={editCompletedValue?'checked':''} onChange={(e)=>setEditCompletedValue(!editCompletedValue)}/><label className="form-check-label">{editCompletedValue?' Accomplished agenda':' Yet to accomplish agenda'}</label></p>
 
             <input value={editTilteValue} onChange={(e)=>setEditTitleValue(e.target.value)} className="form-control rounded-0 mt-3" placeholder="Update agenda title here"/>
             <p className="mb-3"><span className={ `${editTilteValueError===""?"":`bg-pink text-light px-2`}` }>{editTilteValueError}</span></p>
